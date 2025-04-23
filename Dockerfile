@@ -5,6 +5,6 @@ COPY ./images/ /usr/share/nginx/html/images/
 COPY ./favicon/ /usr/share/nginx/html/favicon/
 COPY myel.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 443
+EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
